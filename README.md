@@ -1,2 +1,2 @@
-# my-ML-project
-first and a little bit cliché ML project
+# my ML project
+first and kinda cliché ML project
