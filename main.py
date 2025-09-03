@@ -27,6 +27,7 @@ df.rename(columns={'label': 'genre'}, inplace=True) #renomear label (GTZAN datas
 
 print(df.head())
 print(df.info())
+#print(df['genre'].value_counts()) #verificar quantidade de cada gênero
 
 
 df_numerical = df.select_dtypes(include=np.number) #criar dataframe apenas com colunas numéricas
