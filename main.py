@@ -86,6 +86,7 @@ dt.fit(X_train, Y_train)
 Y_pred_dt = dt.predict(X_test) #usa o que aprendeu para prever o gênero de cada música e armazena na variável y_pred_dt
 
 #!!!!!!!!!!!!!!!!!!!!! avaliando os modelos !!!!!!!!!!!!!!!!!!!!!
+
 #será que Y_pred_lr e Y_pred_dt estão corretos? vamos comparar com Y_test
 print("Regressão Logística")
 print(confusion_matrix( Y_test, Y_pred_lr))
