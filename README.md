@@ -58,4 +58,6 @@ Vemos que aqui, a Regressão Logística foi mais eficaz em generalizar os padrõ
 
 Esse foi meu primeiro projeto de Machine Learning, então pode estar um pouco rudimentar ou saturado, mas estou muito satisfeita de poder aprender sobre PCA, normalização e modelos de ML. Além disso, foi minha primeira vez criando um ambiente virtual e instalando (depois de muitos erros de modulação) as bibliotecas. 
 
+<img src="https://github.com/biabernardi/ML-first-project/blob/main/imagem_2025-09-04_012918657.png?raw=true" width="200" /> 
+
 Estou muito animada para futuros projetos!
