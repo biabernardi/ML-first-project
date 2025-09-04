@@ -31,9 +31,9 @@ print(df.info())
 
 df_filtered = df[(df['genre'] == 'blues') | (df['genre'] == 'metal')] #filtrar blues e metal
 
-df_numerical = df.select_dtypes(include=np.number) #criar dataframe apenas com colunas numéricas
+df_numerical = df_filtered.select_dtypes(include=np.number) #criar dataframe apenas com colunas numéricas do dataframe filtrado
 plt.figure(figsize=(12, 8)) # verificar correlação
-sns.heatmap(df_numerical.corr(), annot=True, fmt=".2f") #uso do novo dataframe no heatmap
+sns.heatmap(df_numerical.corr(), annot=True, fmt=".2f") #uso do novo dataframe filtrado no heatmap
 plt.show()
 
 X = df_filtered.drop(["genre", "filename", "length"], axis=1)  #tira a coluna genre do dataframe e coloca em X (features)
@@ -69,7 +69,7 @@ print(pca.components_[1])
 
 # Dividir dados em treino e teste
 X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=0.3, random_state=42)
-#20% dos dados para teste
+#30% dos dados para teste
 print(f"Tamanho do conjunto de treino: {X_train.shape[0]} músicas") #número de músicas separadas para treino (160)
 print(f"Tamanho do conjunto de teste: {Y_test.shape[0]} músicas") #número de músicas separadas para treino (60)
 
@@ -94,4 +94,3 @@ print(classification_report(Y_test, Y_pred_lr))
 print("Árvore de Decisão")
 print(confusion_matrix(Y_test, Y_pred_dt)) #quantas músicas de cada gênero foram classificadas corretamente e quantas foram incorretamente
 print(classification_report(Y_test, Y_pred_dt)) #precisão, recall e f1-score
-
