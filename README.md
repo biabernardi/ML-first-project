@@ -19,11 +19,11 @@ Este projeto tem como objetivo aplicar técnicas de Machine Learning para classi
 
 Para iniciar, utilizei os dados obtidos do dataset GTZAN. Também utilizei o arquivo `features_30_sec.csv`, que já contém as características extraídas das músicas, como os coeficientes `MFCC`, `tempo` e `chroma_stft`. Logo veremos que foquei apenas nas características numéricas para o funcionamento da ML.
 
-Para focar na classificação binária, o dataset foi filtrado para incluir apenas as músicas dos gêneros blues e metal —  inicialmente, tínhamos 10 gêneros! As colunas de características foram definidas como features (X) e a coluna de gênero como o alvo/target (Y) do modelo.
+Para focar na classificação binária, o dataset foi filtrado para incluir apenas as músicas dos gêneros blues e metal (inicialmente, tínhamos 10 gêneros!). As colunas de características foram definidas como features (X) e a coluna de gênero como o alvo/target (Y) do modelo.
 
 ### **Análise exploratória**
 
-Antes do treinamento, apliquei a normalização com `StandardScaler` e a redução de dimensionalidade com PCA para visualizar a correlação entre as features e a separação dos gêneros. O resultado foi um heatmap para a correlação e um gráfico PCA, que confirmou a distinção entre os dois gêneros. 
+Antes do treinamento, apliquei a normalização com `StandardScaler` e a redução de dimensionalidade com PCA (Principal Component Analysis) para visualizar a correlação entre as features mais relevantes e a separação dos gêneros. O resultado foi um heatmap para a correlação e um gráfico PCA, que confirmou a distinção entre os dois gêneros. 
 <p align="center">
   <img src="https://github.com/biabernardi/my-ML-project/blob/main/Figure_1.png?raw=true" alt="image alt">
 </p>
