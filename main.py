@@ -71,7 +71,7 @@ print(pca.components_[1])
 X_train, X_test, Y_train, Y_test = train_test_split(X_scaled, Y, test_size=0.3, random_state=42)
 #30% dos dados para teste
 print(f"Tamanho do conjunto de treino: {X_train.shape[0]} músicas") #número de músicas separadas para treino (160)
-print(f"Tamanho do conjunto de teste: {Y_test.shape[0]} músicas") #número de músicas separadas para treino (60)
+print(f"Tamanho do conjunto de teste: {Y_test.shape[0]} músicas") #número de músicas separadas para teste (60)
 
 #!!!!!!!!!!!!!!!!!!!!! treinando os modelos de ML e fazendo previsões !!!!!!!!!!!!!!!!!!!!!
 
